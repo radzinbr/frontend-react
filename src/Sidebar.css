@@ -1,0 +1,9 @@
+.sideA {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: gray;
+    width: 300px;
+    height: 700px;
+    margin: 40px 0px 0px 0px;
+}
