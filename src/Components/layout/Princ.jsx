@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Princ.css"
 
 const princ = () => {
   return (
-    <div>
-      <h1>cconteudo principal</h1>
+    <div className='box1'>
+      <h1>conteudo principal</h1>
     </div>
   )
 }
