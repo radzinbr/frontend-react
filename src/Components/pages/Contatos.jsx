@@ -1,16 +1,19 @@
 import React from 'react'
 import Header from '../layout/Header'
 import Sidebar from '../layout/Sidebar'
+import Content from '../layout/Content'
 
 function contatos() {
   return (
     <>
-    <Header />
-    <div class="main">
+      <Header />
+      <div className="main">
         <Sidebar />
-        
-    </div>
-</>
+        <Content>
+          <h1>Contatos</h1>
+        </Content>
+      </div>
+    </>
   )
 }
 

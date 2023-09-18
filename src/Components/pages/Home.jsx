@@ -1,18 +1,20 @@
 import React from 'react'
 import Header from '../layout/Header'
 import Sidebar from '../layout/Sidebar'
-import Princ from '../layout/Princ'
+import Content from '../layout/Content'
 
-function home() {
+function Home() {
     return (
-    <>
-        <Header />
-        <div class="main">
-            <Sidebar />
-            <Princ />
-        </div>
-    </>
+        <>
+            <Header />
+            <div className="main">
+                <Sidebar />
+                <Content>
+                    <h1>Home</h1>
+                </Content>
+            </div>
+        </>
     )
 }
 
-export default home
+export default Home

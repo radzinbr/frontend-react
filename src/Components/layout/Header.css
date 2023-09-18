@@ -13,7 +13,7 @@ margin: 0;
 .top h1 {
     padding-left: 20px;
 }
-ul{
+ul {
     gap: 20px;
     list-style-type: none;
     display: flex;
@@ -26,8 +26,14 @@ ul{
 ul a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 }
+
 ul a:hover {
-color: rgb(151, 151, 151);
+    color: rgb(151, 151, 151);
+    }
+
+ul li a.active {
+    border-bottom: 5px solid orange;
+    padding-bottom: 2px;
 }

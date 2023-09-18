@@ -1,26 +1,22 @@
 import "./header.css"
+import "../ui/button.css"
+import { Link, NavLink } from "react-router-dom"
 
 const Header = () => {
   return (
     <div className="top">
       <h1>logo</h1>
       <nav>
-            <ul>
-                <li>
-                   <a href="/contatos"> contatos</a>
-                </li>
-                <li>
-                <a href="#"> list</a> 
-                </li>
-                <li>
-                <a href="#"> tables</a>  
-                </li>
-                <li>
-                <a href="#"> menbers</a>  
-                </li>
-            </ul>
+        <ul>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/contatos">Contatos</NavLink></li>
+          <li><NavLink to="/about us ">sobre nós</NavLink></li>
+          <li><button className="primary">login</button></li>
+          <li> <button className="secondary">cadastro</button></li>
+
+        </ul>
       </nav>
-      </div>
+    </div>
   )
 }
 

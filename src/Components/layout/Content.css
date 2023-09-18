@@ -1,0 +1,9 @@
+#content{
+    background: rgb(248, 245, 245);
+    margin:40px 0px 0px 70px;
+    width: 1500px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+}
