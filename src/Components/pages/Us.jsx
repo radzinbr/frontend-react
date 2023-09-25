@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../layout/Header'
 import Sidebar from '../layout/Sidebar'
 import Content from '../layout/Content'
 import CardUser from '../ui/CardUser'
 
-const Users = {
-    nome:"samuel",
-    email:"indoali@indo.ali",
-    Photo:"https://img.ifunny.co/images/3086a9bb83b4939813882c1b65f7ffd247556933a7ad6bf8f155b21e35cc08bc_1.jpg"
-}
-const Us = () => {
+
+const Us = () => {  
+    const [users,setUsers] = userState()
+
+useEffect(() => {
+    const getUsers =  async() =>
+    {
+        const response = await fetch('http://localhost:3300/user/list')
+        const data = await response.json()
+        console.log(data.success)
+        console.log(data.user)
+        setUsers(data.Users)
+    
+    }
+
+    getUsers()
+
+},[])
+
+
+
     return (
         <>
             <Header />
@@ -18,14 +33,14 @@ const Us = () => {
                 <Content>
                     <h1>sobre nos</h1>
                     <div>
-                    <CardUser user={Users} />
-                    <CardUser user={Users}/>
-                    <CardUser user={Users} />
-                    <CardUser user={Users} />
-                    </div>
+                        {Users.map((Users) =>
+                            <CardUser key={Users.email} user={Users} />
+                        )}
                     
+                    </div>
+
                 </Content>
-                
+
             </div>
         </>
     )
