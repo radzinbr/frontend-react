@@ -1,22 +1,28 @@
-.card-user{
+.card-user {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    width: 250px;
+    width: 26em;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 1em;
     background-color: rgb(209, 207, 207);
-    margin: 50px 0px 50px 0px;
-    gap: 20px;
-}
-
-.card-user img {
-    width: 100px ;
-    height: 100px ;
+    margin: 2em 0;
+    gap: 2em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card-user:hover {
+    background-color: rgb(180, 180, 180);
+  }
+  
+  .card-user img {
+    width: 10em;
+    height: 8em;
+    margin: 10px;
     border-radius: 50%;
-    
-}
-
-.card-user div h1 {
+  }
+  
+  .card-user div h1 {
     margin: 0;
-}
+  }
